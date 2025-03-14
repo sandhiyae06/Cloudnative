@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns="http://maven.apache.org/POM/4.0.0"
+    xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <parent>
+    <artifactId>kafka</artifactId>
+    <groupId>no.sysco.testing</groupId>
+    <version>1.0-SNAPSHOT</version>
+  </parent>
+
+  <artifactId>data-pipeline</artifactId>
+  <packaging>pom</packaging>
+
+  <modules>
+    <module>http-producer</module>
+    <module>http-materializer</module>
+    <module>schema</module>
+  </modules>
+
+  <dependencyManagement>
+    <dependencies>
+      <dependency>
+        <groupId>no.sysco.testing</groupId>
+        <artifactId>schema</artifactId>
+        <version>${project.version}</version>
+      </dependency>
+    </dependencies>
+  </dependencyManagement>
+
+</project>
