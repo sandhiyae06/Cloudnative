@@ -1,0 +1,19 @@
+<?xml version = "1.0" encoding = "UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Microservices test Suite" parallel="methods"
+	thread-count="1">	
+		<groups>
+		<run>
+			<include name="Regression"/>
+		</run>
+	</groups>	
+	<test name="Microservices test">
+	
+	
+		<classes>
+			<class name="com.MicroservicesTesting.tests.GetUsersList_DetailsTest" /> 
+			<class name="com.MicroservicesTesting.tests.CreateUser_DataDrivenTest" />
+		</classes>
+	</test>
+</suite>
+

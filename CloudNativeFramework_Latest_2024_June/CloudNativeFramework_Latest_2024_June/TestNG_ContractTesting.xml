@@ -1,0 +1,18 @@
+<?xml version = "1.0" encoding = "UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<!-- <suite name = "Contract Test Suite" parallel="tests" thread-count="2">
+   <test name = "Contract Test">
+      <classes>
+         <class name = "com.ContractTesting.ConversionService.CurrencyConversionTest2" />
+    </classes>
+   </test>
+ </suite> -->
+ <suite name = "Contract Test Suite">
+ <test name="Parallel Method Execution"  >
+    <classes>
+        <class name="com.ContractTesting.ConversionService.CurrencyConversionTest2">
+          
+        </class>
+    </classes>
+    </test>
+ </suite>

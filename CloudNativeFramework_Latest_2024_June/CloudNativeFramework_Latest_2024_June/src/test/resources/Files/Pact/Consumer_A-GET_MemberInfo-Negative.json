@@ -1,0 +1,72 @@
+{
+    "provider": {
+        "name": "GET_MemberInfo-Negative"
+    },
+    "consumer": {
+        "name": "Consumer_A"
+    },
+    "interactions": [
+        {
+            "description": "memberinfo responds with confirmation - negative",
+            "request": {
+                "method": "GET",
+                "path": "/memberinfo/cust002",
+                "headers": {
+                    "Content-Type": "application/json"
+                }
+            },
+            "response": {
+                "status": 200,
+                "headers": {
+                    "Content-Type": "application/json"
+                },
+                "body": {
+                    "MultipleResultSet": false,
+                    "searchResults": [
+                        {
+                            "dateOfBirth": "03-01-1951",
+                            "externalMemberId": "cust002",
+                            "firstName": "PETRA",
+                            "gender": {
+                                "disabled": false,
+                                "id": "OPTIONVALUE0000000733",
+                                "label": "Female",
+                                "value": "female"
+                            },
+                            "id": "dzwj53c2-8755-3167-2137-948583061418",
+                            "lastName": "BOISSONNEAUL",
+                            "medicareNumber": "9DY8PU6AM66",
+                            "middleName": "EMPEY",
+                            "userHasBhpAccess": "true"
+                        }
+                    ]
+                },
+                "matchingRules": {
+                    "body": {
+                        "$.searchResults[0].gender.disabled": {
+                            "matchers": [
+                                {
+                                    "match": "type"
+                                }
+                            ],
+                            "combine": "AND"
+                        }
+                    }
+                }
+            },
+            "providerStates": [
+                {
+                    "name": "Consumer A sends Create Member Request to memberinfo"
+                }
+            ]
+        }
+    ],
+    "metadata": {
+        "pactSpecification": {
+            "version": "3.0.0"
+        },
+        "pact-jvm": {
+            "version": "3.5.24"
+        }
+    }
+}

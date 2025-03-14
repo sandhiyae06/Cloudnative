@@ -1,0 +1,109 @@
+{
+	"swagger": "2.0",
+	"info": {
+		"description": "API reference guide for developers",
+		"version": "1.0",
+		"title": "Swagger Demo",
+		"termsOfService": "https://www.javacodegeeks.com/",
+		"contact": {
+			"email": "mary.zheng@jcg.org"
+		}
+	},
+	"host": "www.javacodegeeks.com/",
+	"basePath": "/",
+	"tags": [{
+		"name": "item-controller",
+		"description": "Item Controller"
+	}],
+	"paths": {
+		"/item": {
+			"post": {
+				"tags": ["item-controller"],
+				"summary": "createItem",
+				"operationId": "createItemUsingPOST",
+				"consumes": ["application/json"],
+				"produces": ["*/*"],
+				"parameters": [
+				{
+					"in": "body",
+					"name": "itemData",
+					"description": "createRequest",
+					"required": true,
+					"schema": {
+						"$ref": "#/definitions/ItemData"
+					}
+				}
+				],
+				"responses": {
+					"200": {
+						"description": "OK",
+						"schema": {
+							"type": "integer",
+							"format": "int32"
+						}
+					},
+					"201": {
+						"description": "Created"
+					},
+					"401": {
+						"description": "Unauthorized"
+					},
+					"403": {
+						"description": "Forbidden"
+					},
+					"404": {
+						"description": "Not Found"
+					}
+				},
+				"deprecated": false
+			}
+		},
+		"/item/all": {
+			"get": {
+				"tags": ["item-controller"],
+				"summary": "getItems",
+				"operationId": "getItemsUsingGET",
+				"produces": ["*/*"],
+				"responses": {
+					"200": {
+						"description": "OK",
+						"schema": {
+							"type": "array",
+							"items": {
+								"$ref": "#/definitions/ItemData"
+							}
+						}
+					},
+					"401": {
+						"description": "Unauthorized"
+					},
+					"403": {
+						"description": "Forbidden"
+					},
+					"404": {
+						"description": "Not Found"
+					}
+				},
+				"deprecated": false
+			}
+		}
+	},
+	"definitions": {
+		"ItemData": {
+			"type": "object",
+			"properties": {
+				"hasError": {
+					"type": "boolean"
+				},
+				"id": {
+					"type": "integer",
+					"format": "int32"
+				},
+				"name": {
+					"type": "string"
+				}
+			},
+			"title": "ItemData"
+		}
+	}
+}

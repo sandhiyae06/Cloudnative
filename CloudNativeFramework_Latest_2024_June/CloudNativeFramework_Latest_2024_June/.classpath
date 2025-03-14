@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry excluding="**" kind="src" output="target/classes" path="src/main/resources">
+		<attributes>
+			<attribute name="maven.pomderived" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="con" path="org.eclipse.m2e.MAVEN2_CLASSPATH_CONTAINER">
+		<attributes>
+			<attribute name="maven.pomderived" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry excluding="**" kind="src" output="target/test-classes" path="src/test/resources">
+		<attributes>
+			<attribute name="test" value="true"/>
+			<attribute name="maven.pomderived" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="src/jar/ReusableLibrary-0.0.1-SNAPSHOT.jar"/>
+	<classpathentry kind="lib" path="src/jar/kafka-avro-serializer-5.1.1.jar"/>
+	<classpathentry kind="lib" path="src/jar/kafka-streams-avro-serde-6.1.1.jar"/>
+	<classpathentry kind="lib" path="src/jar/springdoc-openapi-ui-1.5.12.jar"/>
+	<classpathentry kind="lib" path="src/jar/MetaModel-core-4.4.0.jar"/>
+	<classpathentry kind="lib" path="src/jar/MetaModel-excel-4.4.0.jar"/>
+	<classpathentry kind="lib" path="src/jar/MetaModel-full-4.5.5.jar"/>
+	<classpathentry kind="lib" path="src/jar/kafka-schema-registry-5.1.1.jar"/>
+	<classpathentry kind="lib" path="src/jar/kafka-schema-registry-5.1.1-tests.jar"/>
+	<classpathentry kind="lib" path="src/jar/kafka-schema-registry-client-5.1.1.jar"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.junit.JUNIT_CONTAINER/5"/>
+	<classpathentry kind="src" output="target/classes" path="src/main/java">
+		<attributes>
+			<attribute name="optional" value="true"/>
+			<attribute name="maven.pomderived" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="src" output="target/test-classes" path="src/test/java">
+		<attributes>
+			<attribute name="test" value="true"/>
+			<attribute name="optional" value="true"/>
+			<attribute name="maven.pomderived" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-1.8">
+		<attributes>
+			<attribute name="maven.pomderived" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="src/jar/KafkaReusableLibrary.jar"/>
+	<classpathentry kind="lib" path="src/jar/AWSReusableLibrary.jar"/>
+	<classpathentry kind="lib" path="src/jar/AzureReusableLibrary.jar"/>
+	<classpathentry kind="lib" path="src/jar/embedded-cluster_latest2-1.0-SNAPSHOT.jar"/>
+	<classpathentry kind="lib" path="src/jar/ContractReusableLibrary.jar"/>
+	<classpathentry kind="lib" path="src/jar/JMSReusableLibrary.jar"/>
+	<classpathentry kind="lib" path="src/jar/GoogleReusableLibrary.jar"/>
+	<classpathentry kind="lib" path="src/jar/ResponseComparatorReusableLibrary.jar"/>
+	<classpathentry kind="lib" path="src/jar/WireMockReusableLibrary.jar"/>
+	<classpathentry combineaccessrules="false" kind="src" path="/embedded-cluster_latest2"/>
+	<classpathentry kind="output" path="target/classes"/>
+</classpath>

@@ -1,0 +1,15 @@
+{"banks": {
+    "bank": [
+        {
+            "headquarter": "London",
+            "name": "Barclays Bank",
+            "id": 1
+        },
+        {
+            "headquarter": "NewYork",
+            "name": "Goldman Sachs",
+            "id": 2
+        }
+    ],
+    "region": "Europe"
+}}

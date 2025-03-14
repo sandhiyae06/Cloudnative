@@ -1,0 +1,24 @@
+{
+  "id" : "60c9aef5-95aa-42fa-9801-7d738a1fb872",
+  "request" : {
+    "urlPath" : "/currency-exchange/from/{from}/to/{to}",
+    "method" : "GET",
+    "queryParameters" : {
+      "from" : {
+        "equalTo" : "AUD"
+      },
+      "to" : {
+        "equalTo" : "INR"
+      }
+    }
+  },
+  "response" : {
+    "status" : 200,
+    "body" : "{\"id\":10003,\"conversionMultiple\":52,\"to\":\"INR\",\"from\":\"AUD\",\"port\":8000}",
+    "headers" : {
+      "Content-Type" : "application/json"
+    },
+    "transformers" : [ "response-template", "spring-cloud-contract" ]
+  },
+  "uuid" : "60c9aef5-95aa-42fa-9801-7d738a1fb872"
+}

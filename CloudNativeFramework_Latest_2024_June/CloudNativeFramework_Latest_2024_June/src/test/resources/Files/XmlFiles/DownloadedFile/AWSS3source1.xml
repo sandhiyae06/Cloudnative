@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<banks region="Europe">
+	<bank id="1">
+		<name>Barclays Bank</name>
+		<headquarter>London</headquarter>
+	</bank>
+	<bank id="2">
+		<name>Goldman Sachs</name>
+		<headquarter>NewYork</headquarter>
+	</bank>
+</banks>

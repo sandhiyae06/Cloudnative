@@ -1,0 +1,24 @@
+{
+  "id" : "b9167933-8c36-433f-8d85-22830a0f60d9",
+  "request" : {
+    "urlPath" : "/currency-exchange/from/{from}/to/{to}",
+    "method" : "GET",
+    "queryParameters" : {
+      "from" : {
+        "equalTo" : "USD"
+      },
+      "to" : {
+        "equalTo" : "INR"
+      }
+    }
+  },
+  "response" : {
+    "status" : 200,
+    "body" : "{\"id\":10001,\"from\":\"USD\",\"to\":\"INR\",\"conversionMultiple\":75.00,\"port\":8000}",
+    "headers" : {
+      "Content-Type" : "application/json"
+    },
+    "transformers" : [ "response-template", "spring-cloud-contract" ]
+  },
+  "uuid" : "b9167933-8c36-433f-8d85-22830a0f60d9"
+}

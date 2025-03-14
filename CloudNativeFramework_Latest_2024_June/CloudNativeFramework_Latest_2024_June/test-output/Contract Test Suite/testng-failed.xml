@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Contract Test Suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="Parallel Method Execution(failed)">
+    <classes>
+      <class name="com.ContractTesting.ConversionService.CurrencyConversionTest2">
+        <methods>
+          <include name="validateResponseDetailsOrderTest"/>
+          <include name="validateResponseDetailsOrder_Negative"/>
+          <include name="startTest"/>
+          <include name="endTest"/>
+        </methods>
+      </class> <!-- com.ContractTesting.ConversionService.CurrencyConversionTest2 -->
+    </classes>
+  </test> <!-- Parallel Method Execution(failed) -->
+</suite> <!-- Failed suite [Contract Test Suite] -->
